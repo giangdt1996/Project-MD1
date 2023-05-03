@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+     <!-- Important Owl stylesheet -->l
+
+
+
+    <link rel="stylesheet" href="./thanhtoanstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+   
+ 
+
+  </head>
+  <body class="body">
+    <div class="page">
+      <div class="header-container">
+        
+      </div>
+      <div class="header-banner">
+        <img
+          src="https://advserver.cgv.vn/www/images/4071dd3a3df0579d220dad28e9c08679.jpg"
+        />
+      </div>
+      <div class="header-tuyendung">
+        <div class="tuyendung">
+          <i class="fa-solid fa-user-group"></i>TUYỂN DỤNG
+        </div>
+        <div class="tinmoi">
+          <i class="fa-sharp fa-solid fa-tags"></i>TIN MỚI & ƯU ĐÃI
+        </div>
+        <a href="/history/history.html" class="vecuatoi" style="text-decoration: none;color:black"><i class="fa-solid fa-ticket-simple"></i>VÉ CỦA TÔI</a>
+        <div class ="greeting"></div>
+      </div>
+      <div class="header-main">
+        <div>
+          <a href="#"><img src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png" alt=""></a>
+        </div>
+        <div class="headtext">
+          <div >
+            <p>Phim</p>
+          </div>
+          <div>
+            <p>Rạp CGV</p>
+          </div>
+          <div>
+            <p>Thành viên</p>
+          </div>
+          <div>CULTUREPLEX</div>
+        </div>
+        <div class="cine"><img src="https://www.cgv.vn/media/wysiwyg/news-offers/mua-ve_ngay.png" alt=""></div>
+    </div>
+      </div >
+      <div class="tittle col-8">
+        <h3>THANH TOÁN</h3>
+      </div>
+      <div class="thanhtoan">
+    
+    <div class="main-payment col-4">
+      <div class="step1">
+        <div class="giamgia">
+        Bước 1: Giảm giá
+        </div>
+        <p>Hiện tại tính năng thanh toán bằng Voucher, Coupon, Điểm trên We
+          bsite đang bảo trì, để sử dụng vui lòng tải/cập nhật ứng dụng CGV mới nhất để tiếp tục</p>
+          <div class="doitac"> Đối tác</div>
+          <div class="coupon"> Mã Khuyến Mại</div>
+      </div>
+      <div class="step2">
+        <div class="hinhthuc">
+         Bước 2: HÌNH THỨC THANH TOÁN
+        </div>
+        <div class="method">
+          <div>
+            <input type="radio" name="methodpayment" value="visa" ><i class="fa-brands fa-cc-visa"></i>VISA
+           </div>
+           <div>
+             <input type="radio" name="methodpayment" value="JCB"><i class="fa-brands fa-cc-jcb"></i>JCB
+           </div>
+           <div>
+             <input type="radio" name="methodpayment" value="ApplePay"><i class="fa-brands fa-2xl fa-apple-pay"></i>Apple Pay
+           </div>
+           <div>
+             <input type="radio" name="methodpayment" value="Bitcoin"><i class="fa-brands fa-bitcoin" style="color: #e2b928;"></i>Bitcoin
+           </div>
+           <div>
+             <input type="radio"  name="methodpayment" value="Tiền mặt"><i class="fa-solid fa-wallet"></i>Tiền mặt
+           </div>
+          
+        </div>
+        
+      </div>
+      <div classs="checkbox">
+        <input type="checkbox">Tôi đồng ý với điều khoản sử dụng và mua vé cho người có độ tuổi phù hợp
+      </div>
+    </div>
+    <div class="total col-3">
+      <!-- <div class="sum">
+        <p>Tổng cộng</p>
+        <p>85.000đ</p>
+      </div>
+      <div class="off">
+        <p>Khuyến mãi</p>
+        <p>0đ</p>
+      </div>
+      <div class="pay">
+        <h5>Tổng số tiền thanh toán</h5>
+        <p>ATM 85.000đ</p>
+        <p>85.000đ</p>
+      </div> -->
+      <div class="invoice">
+        <h3>CHI TIẾT VÉ</h3>
+        <h5 id="theater-name">Rạp:</h5>
+
+        <div class="movie-info">
+          <p class="label">Phim: </p>
+          <p class="value" id="movie-name"></p>
+        </div>
+
+        <div class="movie-info">
+          <p class="label">Ngày xem: </p>
+          <p class="value" id="booking-date"></p>
+        </div>
+
+        <div class="movie-info">
+          <p class="label">Giờ xem: </p>
+          <p class="value" id="booking-time"></p>
+        </div>
+ 
+        <div class="ticket-info">
+          <p class="label">Số lượng vé: </p>
+          <p class="value" id="booking-seats"></p>
+        </div>
+
+        <div class="ticket-info">
+          <p class="label">Giá vé: </p>
+          <p class="value" id="ticket-price"></p>
+        </div>
+
+        <div class="total" id="total-price"></div>
+        <br>
+        <button class="btn btn-primary btn-confirm ">Xác nhận</button>
+      </div>
+    </div>
+    </div>  
+    <!-- <div class="screen-bot" >
+      <ul class="notice-bot">
+          <li><button><i class="fa-solid fa-arrow-left"></i><br>PREVIOUS</button></li>
+          <li><img src="https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/dc33889b0f8b5da88052ef70de32f1cb/7/0/700x1000_3_.jpg" alt=""></li>
+          <li>ÂM VỰC CHẾT <br>
+          C18</li>
+          <li>
+              <p>Rạp</p>
+              <span> CGV AEON TRẦN PHÚ </span>
+          </li>
+          <li>
+              <p>Suất chiếu</p>
+              <span>18:50,20/4/2023</span>
+          </li>
+          <li>
+              <p>Ghế</p>
+              <span>A12</span>
+          </li>
+          <li><p>Tên phim</p>
+              <span>105,000 đ</span>
+          </li>
+          <li><p>Combo</p>
+          <span>0,0đ</span></li>
+          <li>
+              <p>Tổng</p>
+              <span>105,000 đ</span>
+          </li>
+          <li><button><i class="fa-solid fa-arrow-right"></i><br>PAYMENT</button></li>
+      </ul>
+  </div> -->
+      <!--footer-->
+    <div class="footer">
+      <div class="brand">
+        nhieubrandvai
+      </div>
+      <div class="main-footer">
+        <div class="CGVVN">
+            <h5>CGV Việt Nam</h5>
+            <p>
+              <span>Giới thiệu</span><br>
+              <span>Tiện ích Online</span><br>
+              <span>Thẻ Quà Tặng</span><br>
+              <span>Tuyển Dụng</span><br>
+              <span>Liên hệ Quảng Cáo CGV</span><br>
+        </p>
+        </div>
+        <div class="dieukhoan">
+          <h5>Điều khoản sử dụng</h5>
+          <p>
+            <span>Điều khoản Chung</span><br>
+            <span>Điều khoản Giao dịch</span><br>
+            <span>Chính sách thanh toán</span><br>
+            <span>Chính sách bảo mật</span><br>
+            <span>Câu hỏi thường gặp</span><br>
+        </p>
+          
+        </div>
+        <div class="connect">
+          <h5>Kết nối với chúng tôi</h5>
+          <div class="brandlogo">
+            <span><i class="fa-brands fa-square-facebook fa-2xl" style="color: #2086d5;"></i></i></span>
+            <span><i class="fa-brands fa-square-instagram fa-2xl" style="color: #f17b5e;"></i></span>
+            <span><i class="fa-brands fa-youtube fa-2xl" style="color: #e81127;"></i></span>
+            <span><i class="fa-brands fa-line fa-2xl" style="color: #35d438;"></i></span>
+          </div>
+          <br>
+          <div>
+            <a href="http://online.gov.vn/Home/WebDetails/30270" id="bonoivu" target="_blank">
+              <img src="http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" alt="" width="150px";height="50px">
+            </a>
+          
+          </div>
+        </div>
+        <div class="CSKH">
+          <h5>Chăm Sóc Khách Hàng</h5>
+          <p>
+            Hotline: 1900 6017<br>
+            Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày <br> bao gồm cả Lễ Tết)<br>
+            Email hỗ trợ: hoidap@cgv.vn
+          </p>
+        </div>
+      </div>
+      <div class="bot-footer">
+        <div class="logocgv">
+          <img src="../image/pngegg.png" alt="">
+        </div>
+        <div class="footext">
+          <h5>CÔNG TY TNHH CJ CGV VIETNAM</h5>
+          <span>Giấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 31/7/2008, 
+            đăng ký thay đổi lần thứ 5 ngày 14/10/2015, cấp bởi Sở KHĐT thành phố Hồ Chí Minh.</span><br>
+            <span>Địa Chỉ:Tầng 2, Rivera Park Saigon - Số 7/28 Thành Thái, P.14, Q.10, TPHCM.</span><br>
+            <span>Hotline:1900 6017</span><br>
+            <span>COPY RIGHT 2017 CJ CGV. ALL RIGTH RESERVED.</span><br>
+        </div>
+      </div>
+      <div class="brick">
+        
+      </div>
+    </div>
+    </div>
+    </body>
+    <script src="./thanhtoanapp.js">  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/greeting.js"></script>
+  
+
+
+</html>

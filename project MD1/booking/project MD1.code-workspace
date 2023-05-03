@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../learns/taksDOM/solvtask"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project MD1"
+	}
+}

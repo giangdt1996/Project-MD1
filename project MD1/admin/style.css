@@ -1,0 +1,258 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f4e1bd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* form div {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+} */
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="url"] {
+  width: 100%;
+}
+
+/*Admin*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background-color: rgb(248, 233, 215);
+}
+.header-container {
+  width: 100%;
+}
+.header-container {
+  width: 100%;
+  margin: auto;
+}
+.header-tuyendung {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
+.page {
+  width: 70%;
+  margin: auto;
+}
+
+.header-main {
+  cursor: pointer;
+  padding-top: 20px;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.headtext {
+  cursor: pointer;
+  font-weight: bolder;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.brand {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  text-indent: -99999px;
+  background-image: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/brand-type-film-footer_ver2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-bottom: 3px solid black;
+  margin: auto;
+}
+.footer {
+  border-top: 3px solid black;
+  margin-top: 30px;
+}
+.main-footer {
+  width: 70%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.brandlogo {
+  display: flex;
+  padding-top: 20px;
+  gap: 10px;
+}
+.logocgv img {
+  width: 100px;
+  height: 100px;
+}
+
+.bot-footer {
+  margin: auto;
+  width: 70%;
+  border-top: 3px solid black;
+  padding-top: 30px;
+  display: flex;
+}
+.brick {
+  width: 100%;
+  height: 114px;
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-footer.jpg);
+}
+/*Detail*/
+.detail {
+  padding-top: 20px;
+  display: flex;
+  gap: 50px;
+  width: 70%;
+  margin: auto;
+}
+.moviecontent > h2 {
+  width: 70%;
+  margin: auto;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+.event {
+  margin: auto;
+  width: 70%;
+  border-bottom: 3px solid black;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.event-new {
+  display: flex;
+  list-style-type: none;
+  background: url(../image/23532f86d7d7b6a506823707130a81a1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 400px;
+  height: 40px;
+  gap: 30px;
+  color: white;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.event-new li {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.pdetail {
+  width: 70%;
+  margin: auto;
+}
+/* Modal*/
+.date {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  text-align: center;
+}
+.date-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: gray;
+}
+.date-container span {
+  font-size: 10px;
+  color: gray;
+}
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+.sub {
+  display: flex;
+  gap: 20px;
+}
+.time {
+  display: flex;
+  gap: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-dialog {
+  max-width: 1000px !important;
+  height: 80% !important;
+  width: 80% !important;
+}
+.time span {
+  width: 100px;
+  border: 1px solid gray;
+  text-align: center;
+}
+.sub span {
+  width: 150px;
+  border: 1px solid gray;
+  text-align: center;
+}
+.modal-body {
+  background-color: rgb(247, 239, 229);
+}
+
+table td,
+tr {
+  border: 1px solid rgb(203, 200, 200);
+  align-content: center;
+  font-size: 10px;
+}
+table th {
+  text-align: center;
+  font-size: 16px;
+}
+input {
+  width: 90%;
+}
+.brandlogo i:hover {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/*pseudo*/
+
+/*responsive
+    
+    */
